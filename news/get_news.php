@@ -103,7 +103,7 @@ function searchNews($query) {
         return ["error" => "Masukkan kata kunci pencarian."];
     }
 
-    $apiKey = "06d86443554b4963900a62d467f94394"; // Ganti dengan API Key NewsAPI
+    $apiKey = "Your_API_Key"; // Ganti dengan API Key NewsAPI
     // Mengambil berita dalam bahasa Indonesia, diurutkan berdasarkan terbit secara descending
     $search_api_url = "https://newsapi.org/v2/everything?q=" . urlencode($query) . "&language=id&sortBy=publishedAt&apiKey=" . $apiKey;
 
